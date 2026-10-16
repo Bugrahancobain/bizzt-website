@@ -1,0 +1,173 @@
+:root {
+  --bg: #050706;
+  --card: #101310;
+  --border: #1b211d;
+  --text: #ffffff;
+  --muted: #a2a7a2;
+  --green: #7cff72;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -20%, #142319 0%, #050706 42%),
+    #050706;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+nav {
+  max-width: 960px;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--text);
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: var(--green);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+main {
+  width: min(760px, calc(100% - 40px));
+  margin: 60px auto 100px;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 0 90px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #29442f;
+  background: #0c1710;
+  color: var(--green);
+  padding: 6px 13px;
+  border-radius: 100px;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: clamp(42px, 8vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 0 0 22px;
+}
+
+h2 {
+  margin-top: 42px;
+  font-size: 20px;
+}
+
+.hero p {
+  max-width: 580px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.card {
+  background: rgba(16, 19, 16, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 28px;
+  margin: 18px 0;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+p, li {
+  color: var(--muted);
+}
+
+a {
+  color: var(--green);
+}
+
+.page-title {
+  margin-bottom: 8px;
+  font-size: 42px;
+  letter-spacing: -1.5px;
+}
+
+.updated {
+  color: #6f746f;
+  font-size: 13px;
+  margin-bottom: 45px;
+}
+
+.contact {
+  font-size: 18px;
+}
+
+footer {
+  max-width: 960px;
+  margin: auto;
+  padding: 30px 24px 50px;
+  border-top: 1px solid var(--border);
+  color: #6f746f;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer a {
+  color: #8c938d;
+  text-decoration: none;
+}
+
+@media (max-width: 620px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  main {
+    margin-top: 35px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
